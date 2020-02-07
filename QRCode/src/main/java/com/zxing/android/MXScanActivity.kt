@@ -6,15 +6,17 @@ import android.widget.Toast
 import com.zxing.android.utils.UriHelp
 import kotlin.concurrent.thread
 
-class ScanActivity : CaptureActivity() {
+class MXScanActivity : CaptureActivity() {
     override fun getQRResult(result: String?) {
         setResult(Activity.RESULT_OK, Intent().putExtra("URL", result))
         finish()
     }
 
     override fun onPicSelectClick() {
-        startActivityForResult(Intent(Intent.ACTION_GET_CONTENT)
-                .setType("image/*").addCategory(Intent.CATEGORY_OPENABLE), 66)
+        startActivityForResult(
+            Intent(Intent.ACTION_GET_CONTENT)
+                .setType("image/*").addCategory(Intent.CATEGORY_OPENABLE), 66
+        )
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -34,7 +36,6 @@ class ScanActivity : CaptureActivity() {
                         }
                     }
                 }
-            } else {
             }
         }
     }

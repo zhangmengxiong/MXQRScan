@@ -6,7 +6,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.app.ActivityCompat
-import com.zxing.android.ScanActivity
+import com.zxing.android.MXScanActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         scanBtn.setOnClickListener {
-            startActivityForResult(Intent(this, ScanActivity::class.java), 0x22)
+            startActivityForResult(Intent(this, MXScanActivity::class.java), 0x22)
         }
     }
 
