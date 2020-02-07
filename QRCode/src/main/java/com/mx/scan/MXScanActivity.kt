@@ -1,9 +1,9 @@
-package com.zxing.android
+package com.mx.scan
 
 import android.app.Activity
 import android.content.Intent
 import android.widget.Toast
-import com.zxing.android.utils.UriHelp
+import com.mx.scan.utils.UriHelp
 import kotlin.concurrent.thread
 
 class MXScanActivity : CaptureActivity() {

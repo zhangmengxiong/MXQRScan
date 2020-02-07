@@ -1,4 +1,4 @@
-package com.zxing.android.utils
+package com.mx.scan.utils
 
 import android.annotation.SuppressLint
 import android.content.ContentUris

@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.zxing.android.MXScanActivity" />
+        <activity android:name="com.mx.scan.MXScanActivity" />
     </application>
 
 </manifest>
